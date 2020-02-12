@@ -2,12 +2,16 @@
   <input id="night_day" type="button" value="night" onclick="
     //값 받기
     var target = document.querySelector('body');
+
+    //조건문
     if(this.value === 'night'){
       target.style.backgroundColor = 'black';
       target.style.color = 'white';
       this.value = 'day';
 
+      //모든 a 태그값을 받아옴
       var alist = document.querySelectorAll('a');
+
       var i = 0;
       while(i < alist.length){
         alist[i].style.color = 'powderblue';
@@ -26,7 +30,7 @@
       }
     }
   ">
-  
+
   <ol>
     <li><a href="1.html">HTML</a></li>
     <li><a href="2.html">CSS</a></li>
