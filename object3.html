@@ -1,0 +1,20 @@
+<script>
+  var a = {
+    "first" : "abcd",
+    "second" : "efgh"
+  };
+
+  //객체의 소속된 함수 : 메소드
+  a.showAll = function(){
+    for (var key in this){
+      if(key != 'showAll'){
+        //객체의 소속된 변수 : 프로퍼티
+        document.write(key + '<br>');
+        document.write(this[key] + '<br><br>');
+      }
+    }
+  }
+
+  a.showAll();
+
+</script>
